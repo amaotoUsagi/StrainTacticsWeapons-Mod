@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <SoundDef>
+    <defName>Shot_StrainP2Compact</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_P2C</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainChucky</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_shotgun_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainStumpy</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_shotgunstumpy_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainOutranger</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_shotgunoutranger_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainSAP</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_SAP_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainSAPC</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous> 
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_SAPConvoy_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainSAPSOPMOD</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_SAPSOPMOD_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainLCR</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous> 
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_lar_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainLCRBandit</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_larc_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainLCRE</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_lare_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainMAR</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_mar_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainMARC</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_marc_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainMARDMR</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_mar4dmr_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainHBR</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_hbr_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainHMGSAW</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_hmg60_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainHAMR</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_hamr_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <volumeRange>90.00~100.00</volumeRange>
+		<pitchRange>0.90~1.00</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainMinigun</defName>  
+    <context>MapOnly</context>
+    <maxVoices>12</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>    
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_minigun_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<volumeRange>33.33~40.00</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainFlamer</defName>  
+    <context>MapOnly</context>
+    <maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_flamethrower_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainP2X</defName>  
+    <context>MapOnly</context>
+    <maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>   
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_XP2_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainOutrangerX</defName>  
+    <context>MapOnly</context>
+	<maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_shotgunoutrangerX_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainXAR</defName>  
+    <context>MapOnly</context>
+    <maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_xar_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainXHMGSAW</defName>  
+    <context>MapOnly</context>
+    <maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous> 
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_xhmg_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainXHAMR</defName>  
+    <context>MapOnly</context>
+    <maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous> 
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_xhamr_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+        <volumeRange>80.00~100.00</volumeRange>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shot_StrainRailgun</defName>  
+    <context>MapOnly</context>
+    <maxVoices>8</maxVoices>
+    <maxSimultaneous>4</maxSimultaneous> 
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>wpn_railgun_fire</clipFolderPath>
+          </li>
+        </grains>   
+        <sustainLoop>False</sustainLoop>
+        <volumeRange>80.00~100.00</volumeRange>
+		<pitchRange>0.90~1.00</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+  
+  <SoundDef>
+    <defName>Explosion_StrainHE</defName>  
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>explosion_HE</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>80~80</volumeRange>      
+        <pitchRange>0.8516304~1.254348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Explosion_StrainHEI</defName>  
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>explosion_HEI</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>80~80</volumeRange>      
+        <pitchRange>0.8516304~1.254348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Explosion_StrainIncendiary</defName>  
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>explosion_Incendiary</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>80~80</volumeRange>      
+        <pitchRange>0.8516304~1.254348</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

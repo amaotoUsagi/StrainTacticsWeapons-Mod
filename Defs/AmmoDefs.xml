@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_StrainFlamethrower</defName>
+    <label>flamethrower fuel</label>
+    <ammoTypes>
+      <Ammo_Flamethrower_Napalm>Bullet_StrainFlamethrower_Napalm</Ammo_Flamethrower_Napalm>
+      <Ammo_Flamethrower_Prometheum>Bullet_StrainFlamethrower_Prometheum</Ammo_Flamethrower_Prometheum>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_StrainRPG</defName>
+    <label>RPG Launcher</label>
+    <ammoTypes>
+      <Ammo_StrainRPG>Bullet_StrainRPG</Ammo_StrainRPG>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <!-- ================== Ammo Category ================== -->
+
+  <CombatExtended.AmmoCategoryDef>
+    <defName>RocketMP</defName>
+    <label>Multi-purpose</label>
+    <labelShort>MP</labelShort>
+    <description>A heavy, multi-purpose munition designed for versatility and ease of use.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+  <!-- ================== Ammo Item ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="RPG7GrenadeBase">
+    <defName>Ammo_StrainRPG</defName>
+    <label>RPG</label>
+    <description>Rocket-propelled grenade designed for the RPG launcher. After being fired a rocket motor kicks in to propel the grenade further.</description>
+    <graphicData>
+      <texPath>Things/Ammo/Ammo_StrainRPG</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>71.76</MarketValue>
+      <Mass>3.1</Mass>
+      <Bulk>13.94</Bulk>
+    </statBases>
+    <ammoClass>RocketMP</ammoClass>
+	<detonateProjectile>Bullet_StrainRPG</detonateProjectile>
+  </ThingDef>
+
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef ParentName="BaseFlamethrowerBullet">
+    <defName>Bullet_StrainFlamethrower_Napalm</defName>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <label>jellied chemfuel stream</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Proj_StrainFlame</texPath>
+	  <drawSize>(1,1.5)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.33</preExplosionSpawnChance>
+      <soundExplode>CE_FlamethrowerExplosion</soundExplode>
+      <explosionRadius>0.1</explosionRadius>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <gravityFactor>5</gravityFactor>
+    </projectile>
+	<comps>
+		<li Class="CombatExtended.CompProperties_Fragments">
+			<fragments>
+				<Fragment_ChemfuelFlame>2</Fragment_ChemfuelFlame>
+			</fragments>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFlamethrowerBullet">
+    <defName>Bullet_StrainFlamethrower_Prometheum</defName>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <label>jellied prometheum stream</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Proj_StrainFlame</texPath>
+	  <drawSize>(1,1.5)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>PrometheumFlame</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.67</preExplosionSpawnChance>
+      <soundExplode>CE_FlamethrowerExplosion</soundExplode>
+      <explosionRadius>0.1</explosionRadius>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <gravityFactor>5</gravityFactor>
+    </projectile>
+	<comps>
+		<li Class="CombatExtended.CompProperties_Fragments">
+			<fragments>
+				<Fragment_PrometheumFlame>2</Fragment_PrometheumFlame>
+			</fragments>
+		</li>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseRPG7Grenade">
+    <defName>Bullet_StrainRPG</defName>
+    <label>RPG (MP)</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Proj_StrainRPG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>50</speed>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>316</damageAmountBase>
+      <armorPenetrationSharp>500</armorPenetrationSharp>
+      <armorPenetrationBlunt>61.64</armorPenetrationBlunt>
+    </projectile>
+    <comps>
+	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
+		<damageAmountBase>205</damageAmountBase>
+		<explosiveDamageType>Thermobaric</explosiveDamageType>
+		<explosiveRadius>2.4</explosiveRadius>
+		<explosionSound>Explosion_StrainHEI</explosionSound>
+		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+	  </li>
+	  <li Class="CombatExtended.CompProperties_Fragments">
+		<fragments>
+			<Fragment_Large>3</Fragment_Large>
+		  <Fragment_Small>20</Fragment_Small>
+		</fragments>
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- ================== Recipe ================== -->
+
+  <RecipeDef ParentName="LauncherAmmoRecipeBase">
+    <defName>MakeAmmo_StrainRPG</defName>
+    <label>make RPG (MP) x5</label>
+    <description>Craft 5 RPG (MP).</description>
+    <jobString>Making RPG (MP).</jobString>
+    <workAmount>16200</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>74</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_StrainRPG>5</Ammo_StrainRPG>
+    </products>
+  </RecipeDef>
+
+  <!-- ================== Explosion fragments ================== -->
+  
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_ChemfuelFlame</defName>
+		<label>chemfuel</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_StrainFlame</texPath>
+			<drawSize>(1,0.5)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+		  <speed>5</speed>
+		  <damageDef>Flame</damageDef>
+		  <damageAmountBase>1</damageAmountBase>
+		  <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+		  <preExplosionSpawnChance>0.33</preExplosionSpawnChance>
+		  <soundExplode>CE_FlamethrowerExplosion</soundExplode>
+		  <explosionRadius>0.1</explosionRadius>
+		  <ai_IsIncendiary>true</ai_IsIncendiary>
+		  <gravityFactor>10</gravityFactor>
+		</projectile>
+	</ThingDef>
+  
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_PrometheumFlame</defName>
+		<label>prometheum</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_StrainFlame</texPath>
+			<drawSize>(1,0.5)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+		  <speed>5</speed>
+		  <damageDef>PrometheumFlame</damageDef>
+		  <damageAmountBase>1</damageAmountBase>
+		  <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+		  <preExplosionSpawnChance>0.67</preExplosionSpawnChance>
+		  <soundExplode>CE_FlamethrowerExplosion</soundExplode>
+		  <explosionRadius>0.1</explosionRadius>
+		  <ai_IsIncendiary>true</ai_IsIncendiary>
+		  <gravityFactor>10</gravityFactor>
+		</projectile>
+	</ThingDef>
+  
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_PrometheumGasCluster</defName>
+		<label>prometheum</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Proj_StrainFlame</texPath>
+			<drawSize>(1,0.5)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+		  <speed>20</speed>
+		  <damageDef>PrometheumFlame</damageDef>
+		  <damageAmountBase>10</damageAmountBase>
+		  <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+		  <preExplosionSpawnChance>0.67</preExplosionSpawnChance>
+		  <soundExplode>CE_FlamethrowerExplosion</soundExplode>
+		  <explosionRadius>0.1</explosionRadius>
+		  <ai_IsIncendiary>true</ai_IsIncendiary>
+		  <gravityFactor>20</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+</Defs>
