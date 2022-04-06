@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
   <!-- =============================================== -->
   <!-- ==================== Melee ==================== -->
   <!-- =============================================== -->
@@ -249,7 +248,7 @@
 
   <!-- ==================== P2 Pistol ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_P2Compact</defName>
     <label>P2 Compact</label>
     <description>High-caliber sidearm deployed since the first contact with the Strain. Modified for CQC. Features an extended magazine and a laser pointer for reflexive firing.</description>
@@ -325,7 +324,7 @@
 
   <!-- ==================== Shotgun "Chucky" ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_ShotgunChucky</defName>
     <label>Shotgun "Chucky"</label>
     <description>A shotgun used by the first-encounter killteams during the Neptune Incident.</description>
@@ -410,7 +409,7 @@
 
   <!-- ==================== Shotgun "Stumpy" ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_ShotgunStumpy</defName>
     <label>Shotgun "Stumpy"</label>
     <description>A shortened version mainly used as a sidearm. Its spread is ideal for close encounters.</description>
@@ -496,7 +495,7 @@
 
   <!-- ==================== Shotgun "Outranger" ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_ShotgunOutranger</defName>
     <label>Shotgun "Outranger"</label>
     <description>An extended variant that is often deployed against hardened targets with AP-slugs.</description>
@@ -582,7 +581,7 @@
 
   <!-- ==================== SAP-1 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_SAP</defName>
     <label>SAP-1</label>
     <description>The SAP-1 gained notoriety by punks in the Urbworld and Megacolonies for its high rate of fire and knockback.</description>
@@ -675,7 +674,7 @@
 
   <!-- ==================== SAP Convoy ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_SAPC</defName>
     <label>SAP "Convoy"</label>
     <description>Adored by vehicle crews who hate to reload, this ultracompact version has twice the ammo.</description>
@@ -768,7 +767,7 @@
 
   <!-- ==================== SAP SOPMOD ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_SAPSOPMOD</defName>
     <label>SAP-SOPMOD</label>
     <description>This sleek special-ops conversion increases the SAP's accuracy and damage output.</description>
@@ -861,7 +860,7 @@
 
   <!-- ==================== LCR ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_LCR</defName>
     <label>LCR</label>
     <description>The LCR is essenstially a cut-down MAR. Trading range, firepower and handling for portability.</description>
@@ -950,7 +949,7 @@
 
   <!-- ==================== LCR "Bandit" ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_LCRBandit</defName>
     <label>LCR "Bandit"</label>
     <description>The LCR Bandit variant sports a large drum mag and a micro-laser module.</description>
@@ -1042,7 +1041,7 @@
 
   <!-- ==================== LCR-E ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_LCRE</defName>
     <label>LCR-E</label>
     <description>The extended range L4 has a long reinforced barrel mod, angled foregrip and magnified optics.</description>
@@ -1131,7 +1130,7 @@
 
   <!-- ==================== MAR ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_MAR</defName>
     <label>MAR</label>
     <description>The reliable, mass-produced Main Assault Rifle has been in service since the First Outbreak.</description>
@@ -1217,7 +1216,7 @@
 
   <!-- ==================== MARC ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_MARC</defName>
     <label>MAR-C "Pyrate"</label>
     <description>This folded-up setup has a drum mag and reinforced barrel for prolonged firing. Yarrr!</description>
@@ -1306,7 +1305,7 @@
 
   <!-- ==================== MAR4 DMR ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_MARDMR</defName>
     <label>MAR4 DMR</label>
     <description>The Designated Marksman variant trades portability for greater range.</description>
@@ -1400,7 +1399,7 @@
 
   <!-- ==================== Heavy Battle Rifle ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_HeavyBattleRifle</defName>
     <label>Heavy Battle Rifle</label>
     <description>A long-ranged, hard-hitting, semi-automatic cousin of the MAR4 with high velocity ammo.</description>
@@ -1491,7 +1490,7 @@
 
   <!-- ==================== HMG60 SAW ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_HMGSAW</defName>
     <label>HMG60-SAW</label>
     <description>The oppressive Squad Assault Weapon brings a wicked grin to those that wield it "Wolfen" style.</description>
@@ -1585,7 +1584,7 @@
 
   <!-- ==================== 20mm Monster Killer ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_HAMRMonsterKiller</defName>
     <label>HAMR 20mm "Monster Killer"</label>
     <description>This beast fires a 20mm shell that can tear through flesh and materiel. Handle with care.</description>
@@ -1677,7 +1676,7 @@
 
   <!-- ==================== Tactical Gatling ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_Minigun</defName>
     <label>Tactical Minigun "Gatty"</label>
     <description>The "Gatty" is a converted air-assault rotary cannon with a terrifying rate of fire.</description>
@@ -1956,7 +1955,7 @@
 
   <!-- ==================== P2X ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_P2X</defName>
     <label>P2X</label>
     <description>An experimental pistol, firing pulse charged munitions that gets charged as it leaves the barrel. A favorite among WhiteCell operators.</description>
@@ -2041,7 +2040,7 @@
 
   <!-- ==================== Shotgun "Blaster" ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_ShotgunOutrangerX</defName>
     <label>Shotgun "Blaster"</label>
     <description>An experimental shotgun, firing pulse charged munitions that gets charged as it leaves the barrel. Another favorite among WhiteCell operators due to their preference for close combat.</description>
@@ -2134,7 +2133,7 @@
 
   <!-- ==================== XAR ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_XMAR</defName>
     <label>XMAR</label>
     <description>An experimental MAR, firing pulse charged munitions that gets charged as it leaves the barrel. Barely different from its mass-produced counterpart, owing to the fact that its one of the first weapons modified when the Mechanoids were also getting infested by the Strain.</description>
@@ -2228,7 +2227,7 @@
 
   <!-- ==================== XHMG60-SAW ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_XHMGSAW</defName>
     <label>XHMG60-SAW</label>
     <description>An experimental Machinegun, firing pulse charged munitions that gets charged as it leaves the barrel. A heavy weapon capable of putting down armored variants of the Strain with ease, its effective whether the target is mechanical or fleshy in nature.</description>
@@ -2328,7 +2327,7 @@
 
   <!-- ==================== XHAMR 12x72mm ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_XHAMR</defName>
     <label>XAMR 12mm "Hunter Killer"</label>
     <description>An experimental anti-materiel rifle, firing pulse charged munitions that gets charged as it leaves the barrel. Modified to fire 12x72mm charged munitions, this beast can tear a hole through anything it hits.</description>
@@ -2425,7 +2424,7 @@
 
   <!-- ==================== The Eraser ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_Railgun</defName>
     <label>Railgun "Eraser"</label>
     <description>A fearsome railgun. A weapon deployed for experimental weapon platforms. Each round is capable of tearing through anything it hits. It uses electromagnetic technology to propel each one of its shells to hypersonic speeds.</description>
