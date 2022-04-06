@@ -164,7 +164,7 @@
   
   <ThingDef ParentName="ResourceBase">
     <defName>Strain_ATMineItem</defName>
-    <label>APERS Bounding Mine</label>
+    <label>AT Mine</label>
     <description>A High-explosive incendiary mine. For Anti-tank use. Or monsters.</description>
     <graphicData>
       <texPath>Things/Weapons/Explosive_Mine_Item</texPath>
