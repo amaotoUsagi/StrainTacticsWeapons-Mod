@@ -282,6 +282,7 @@
         <wickTicks>0</wickTicks>
         <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
         <preExplosionSpawnChance>0.67</preExplosionSpawnChance>
+		<explosionSound>Explosion_StrainHEI</explosionSound>
       </li>
 	  <li Class="CombatExtended.CompProperties_Fragments">
 		<fragments>
