@@ -1586,7 +1586,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_HAMRMonsterKiller</defName>
-    <label>HAMR 20mm "Monster Killer"</label>
+    <label>20mm "Monster Killer"</label>
     <description>This beast fires a 20mm shell that can tear through flesh and materiel. Handle with care.</description>
     <graphicData>
       <texPath>Things/Weapons/Heavy_HAMR</texPath>
@@ -2329,7 +2329,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Strain_XHAMR</defName>
-    <label>XAMR 12mm "Hunter Killer"</label>
+    <label>12mm "Hunter Killer"</label>
     <description>An experimental anti-materiel rifle, firing pulse charged munitions that gets charged as it leaves the barrel. Modified to fire 12x72mm charged munitions, this beast can tear a hole through anything it hits.</description>
     <graphicData>
       <texPath>Things/Weapons/Heavy_XAMR</texPath>
