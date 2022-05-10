@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== APERS Bounding mine ========================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_StrainAPERS</defName>
+    <label>APERS Bounding Mine</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Proj_Mine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>56</damageAmountBase>
+      <explosionRadius>1.5</explosionRadius>
+      <speed>1</speed>
+	  <!--gravityFactor>5</gravityFactor-->
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>GiantExplosion</explosionEffect>
+      <soundExplode>Explosion_StrainHE</soundExplode>
+    </projectile>
+    <comps>
+	  <li Class="CombatExtended.CompProperties_Fragments">
+		<fragments>
+			<Fragment_Small>103</Fragment_Small>
+		</fragments>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <!--=============== Item ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Strain_APERSItem</defName>
+    <label>APERS Bounding Mine</label>
+    <description>A landmine that launches itself when triggered showering fragments on impact. For Anti-personnel (APERS) use.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Explosive_Mine_Item</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+	  <Bulk>8.17</Bulk>
+      <MarketValue>37.93</MarketValue>
+      <Mass>4.1</Mass>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList>
+      <Steel>42</Steel>
+      <FSX>4</FSX>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <productCount>5</productCount>
+	  <workAmount>7000</workAmount>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedAmmo</unfinishedThingDef>
+      <researchPrerequisite>IEDs</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.4</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <damageAmountBase>56</damageAmountBase>
+        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<explodeOnKilled>True</explodeOnKilled>
+        <wickTicks>30~60</wickTicks>
+      </li>
+	  <li Class="CombatExtended.CompProperties_Fragments">
+		<fragments>
+			<Fragment_Small>103</Fragment_Small>
+		</fragments>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <!--=============== Mine ====================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Strain_APERSMine</defName>
+    <label>APERS Bounding Mine</label>
+    <description>A landmine that launches itself when triggered showering fragments on impact. For Anti-personnel (APERS) use.</description>
+    <uiIconPath>Things/Weapons/Explosive_Mine_Itema</uiIconPath>
+    <graphicData>
+      <texPath>Things/Weapons/Explosive_Mine_Active</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Building_TrapExplosive</thingClass>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>0</pathCost>
+    <canOverlapZones>true</canOverlapZones>
+    <repairEffect>ConstructDirt</repairEffect>
+    <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <statBases>
+      <Mass>4.1</Mass>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>37.93</MarketValue>
+      <WorkToBuild>1250</WorkToBuild> <!-- approx 30 min in-game time-->
+      <Flammability>0</Flammability>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>10.0</TrapSpringChance>
+    </statBases>
+    <costList>
+      <Strain_APERSItem>1</Strain_APERSItem>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapPeacefulWildAnimalsSpringChanceFactor>10.0</trapPeacefulWildAnimalsSpringChanceFactor>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+    </building>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>IEDs</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+	<resourcesFractionWhenDeconstructed>1.00</resourcesFractionWhenDeconstructed>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0.1</explosiveRadius>
+        <explosiveDamageType>Stun</explosiveDamageType>
+        <wickTicks>0</wickTicks>
+      </li>
+	  <li Class="CombatExtended.CompProperties_Fragments">
+		<fragments>
+			<Proj_StrainAPERS>1</Proj_StrainAPERS>
+		</fragments>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <!--============================================-->
+  <!--=============== AT Mine ====================-->
+  <!--============================================-->
+
+  <!--=============== Item ====================-->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Strain_ATMineItem</defName>
+    <label>AT Mine</label>
+    <description>A High-explosive incendiary mine. For Anti-tank use. Or monsters.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Explosive_Mine_Item</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+	  <Bulk>8.17</Bulk>
+      <MarketValue>61.94</MarketValue>
+      <Mass>4</Mass>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <costList>
+      <Steel>136</Steel>
+      <FSX>23</FSX>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+	  <productCount>5</productCount>
+	  <workAmount>11600</workAmount>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedAmmo</unfinishedThingDef>
+      <researchPrerequisite>IEDs</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.9</explosiveRadius>
+        <explosiveDamageType>Thermobaric</explosiveDamageType>
+        <damageAmountBase>503</damageAmountBase>
+        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<explodeOnKilled>True</explodeOnKilled>
+        <wickTicks>30~60</wickTicks>
+      </li>
+	  <li Class="CombatExtended.CompProperties_Fragments">
+		<fragments>
+			<Fragment_Large>9</Fragment_Large>
+			<Fragment_Small>29</Fragment_Small>
+		</fragments>
+	  </li>
+    </comps>
+  </ThingDef>
+
+  <!--=============== Mine ====================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Strain_ATMine</defName>
+    <label>Anti-tank Mine</label>
+    <description>A High-explosive incendiary mine. For Anti-tank use. Or monsters.</description>
+    <uiIconPath>Things/Weapons/Explosive_Mine_Itema</uiIconPath>
+    <graphicData>
+      <texPath>Things/Weapons/Explosive_Mine_Active</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Building_TrapExplosive</thingClass>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>0</pathCost>
+    <canOverlapZones>true</canOverlapZones>
+    <repairEffect>ConstructDirt</repairEffect>
+    <constructEffect>ConstructDirt</constructEffect>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <statBases>
+      <Mass>4</Mass>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>61.94</MarketValue>
+      <WorkToBuild>1250</WorkToBuild> <!-- approx 30 min in-game time-->
+      <Flammability>0</Flammability>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>10.0</TrapSpringChance>
+    </statBases>
+    <costList>
+      <Strain_ATMineItem>1</Strain_ATMineItem>
+    </costList>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapPeacefulWildAnimalsSpringChanceFactor>10.0</trapPeacefulWildAnimalsSpringChanceFactor>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+    </building>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>IEDs</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+	<resourcesFractionWhenDeconstructed>1.00</resourcesFractionWhenDeconstructed>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.9</explosiveRadius>
+        <explosiveDamageType>Thermobaric</explosiveDamageType>
+        <damageAmountBase>503</damageAmountBase>
+        <wickTicks>0</wickTicks>
+        <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.67</preExplosionSpawnChance>
+		<explosionSound>Explosion_StrainHEI</explosionSound>
+      </li>
+	  <li Class="CombatExtended.CompProperties_Fragments">
+		<fragments>
+			<Fragment_Large>9</Fragment_Large>
+			<Fragment_Small>29</Fragment_Small>
+		</fragments>
+	  </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
